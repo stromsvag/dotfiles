@@ -1,0 +1,91 @@
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+
+" Fast saving, sourceing and editing
+nnoremap <leader>w :write!<cr>
+nnoremap <leader>ev :edit ~/.ideavimrc<CR>
+nnoremap <leader>sv :source ~/.ideavimrc<CR>
+
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
+
+" Turn on the wild menu
+set wildmenu
+
+"Always show current position
+set ruler
+
+" Set relative numbers
+set relativenumber
+
+" Height of the command bar
+set cmdheight=2
+
+" Add a bit extra margin to the left
+set foldcolumn=1
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" For regular expressions turn magic on
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+" How many tenths of a second to blink when matching brackets
+set matchtime=2
+
+" Disable highlight when <leader><cr> is pressed
+nnoremap <silent> <leader><cr> :noh<cr>
+
+" Exit insert mode
+inoremap jk <Esc>
+
+" Remap VIM 0 to first non-blank character
+nnoremap 0 ^
+
+" Search with space
+nnoremap <space> /
+
+" Easy motion
+nmap <leader><leader>w :action KJumpAction.Word0<cr>
+
+" sourround
+set surround
+
+" Smart way to move between windows
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+
+" Multi cursors
+set multiple-cursors
+
+" Toggle project
+nnoremap <leader>nn :action ActivateProjectToolWindow<CR>
+
+" Close All Open files
+nnoremap <leader>ZZ :action CloseAllEditors<CR>
+nnoremap <leader>zz :action CloseAllEditorsButActive<CR>
+
+" Search everywhere
+nnoremap <C-p> :action SearchEverywhere<CR>
