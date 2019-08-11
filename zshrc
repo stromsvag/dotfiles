@@ -103,3 +103,6 @@ FILE=~/.secret-env && test -f $FILE && source $FILE
 # GoLang
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
+
+# Binaries folder
+export PATH=$PATH:~/bin
