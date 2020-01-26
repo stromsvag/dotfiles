@@ -66,7 +66,7 @@ nnoremap 0 ^
 nnoremap <space> /
 
 " Easy motion
-nmap <leader><leader>w :action KJumpAction.Word0<cr>
+set easymotion
 
 " sourround
 set surround

@@ -20,6 +20,9 @@ nnoremap <leader>w :write!<cr>
 nnoremap <leader>ev :edit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
 
+" Copy
+set clipboard=unnamedplus
+
 
 " }
 
@@ -75,6 +78,9 @@ Plug 'airblade/vim-gitgutter'
 
 " PL/B
 Plug 'daggemann/vim-plb'
+
+" Multicursor
+Plug 'terryma/vim-multiple-cursors'
 
 " Golang
 Plug 'fatih/vim-go'
@@ -334,9 +340,9 @@ set stal=1
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Quickfix
-nnoremap <C-n> :cnext<CR>
-nnoremap <C-m> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
+"nnoremap <C-n> :cnext<CR>
+"nnoremap <C-m> :cprevious<CR>
+"nnoremap <leader>a :cclose<CR>
 
 " }
 
