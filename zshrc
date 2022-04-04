@@ -105,7 +105,13 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
 
 # Binaries folder
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/install4j7/bin
 
 # JAVA
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+
+# Node versions with n
+export N_PREFIX=$HOME/.n
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

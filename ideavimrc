@@ -53,6 +53,9 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set matchtime=2
 
+" Highlight yanked region
+set highlightedyank
+
 " Disable highlight when <leader><cr> is pressed
 nnoremap <silent> <leader><cr> :noh<cr>
 

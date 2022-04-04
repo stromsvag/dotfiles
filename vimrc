@@ -342,7 +342,7 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " Quickfix
 "nnoremap <C-n> :cnext<CR>
 "nnoremap <C-m> :cprevious<CR>
-"nnoremap <leader>a :cclose<CR>
+" nnoremap <leader>a :cclose<CR>
 
 " }
 
@@ -376,6 +376,7 @@ autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
+autocmd BufNewFile,BufRead *.gohtml set ft=gohtmltmpl
 
 " run :GoBuild or :GoTestCompile based on the go file
 function! s:build_go_files()
